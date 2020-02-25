@@ -1,19 +1,17 @@
 import React from 'react';
 import './App.css';
-import data from './data';
 import NavWrapper from './components/NavWrapper';
 import SubNav from './components/SubNav';
 import { Route } from 'react-router-dom';
 
 
 function App() {
-  data.map(elem => console.log(elem.name))
   return (
     <div className="App">
-      <Route>
+      <Route exact path='/'>
         <NavWrapper />
       </Route>
-      <Route>
+      <Route path='/'>
         <SubNav />
       </Route>
     </div>
