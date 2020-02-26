@@ -8,10 +8,10 @@ import { Route } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <Route exact path='/'>
+      <Route path='/'>
         <NavWrapper />
       </Route>
-      <Route path='/'>
+      <Route exact path='/sub/:id'>
         <SubNav />
       </Route>
     </div>
