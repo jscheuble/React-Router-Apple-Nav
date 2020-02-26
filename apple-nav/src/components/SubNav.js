@@ -11,7 +11,7 @@ export default function SubNav() {
 
     return(
         <div>
-            {helper[0].sub.map(elem => <span>{elem}</span>)}
+            {helper[0].sub.map((elem, i) => <div key={i}>{elem}</div>)}
 
         </div>
     );
